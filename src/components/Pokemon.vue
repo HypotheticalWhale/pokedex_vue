@@ -1,13 +1,17 @@
 <template>
   <div class="pokemon-info">
-    <h2 style = "font-family: 'Pokemon'">{{ pokename.charAt(0).toUpperCase() + pokename.slice(1) }}</h2>
+    <h2 class = "pokemon-title">{{ pokename.charAt(0).toUpperCase() + pokename.slice(1) }}</h2>
     <img :src="`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`" style="width:20vw; height:20vw" />
-    <p>Type:</p>
-    <div>
-      <img v-for="type in types" :src="`src/assets/pokemon_types/${type.name}.png`" class="pokemon-type-img" />
-    </div>
-    <p>Weight: {{ weight }} kg</p>
-    <p>Height: {{ height }} m</p>
+    
+    <p>TYPE :</p>
+    <div class="type-container">
+      <div v-for="type in types" class="type">
+        <img :src="`src/assets/pokemon_types/${type.name}.png`" class="pokemon-type-img" />
+        <!-- <p class="type-name">{{ type.name.toUpperCase() }} </p> -->
+      </div>
+      </div>
+    <p>WEIGHT : {{ weight }} kg</p>
+    <p>HEIGHT : {{ height }} m</p>
   </div>
 </template>
 
@@ -61,7 +65,11 @@ export default {
   height: 100px;
   border-radius: 50%;
 }
-
+.pokemon-title{
+    font-family: "Pokemon";
+    text-decoration: none;
+    -webkit-text-stroke: 1px black;
+}
 .pokemon-info p {
   color: white;
   font-weight: bold;
@@ -73,5 +81,15 @@ export default {
   height: 50px;
   margin-right: 10px;
 }
+.type-container {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 10px;
+}   
+.type {
+  align-items: center;
+  margin-right: 10px;
+}
+
 </style>
 
