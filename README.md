@@ -1,7 +1,17 @@
-# Vue 3 + Vite
+# Accredify Frontend Assesment
+p.s. i had a great time w this was very fun, i think its the most fun i've ever had on one of these asssesments bc pokemon 
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A. what your project is about<br>
+It's a pokedex, clicking on a pokemon card will give you more information about the pokemon <br>
+to be honest i wanted to be a little bit more original but seeing as PokeAPI is one of the two recommended, i had no choice haha
 
-## Recommended IDE Setup
+B. the technologies used<br>
+Vite,Vue,Js,HTML,CSS,PokeAPI,PokeAPI Sprites
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+C. instructions on how to run your project locally<br>
+`yarn` <br>
+`yarn dev`
+
+D. your design considerations<br>
+This is all new to me so i just tried my best to make the page look like pokemon (w the colors and fonts)<br>
+A lot of this is new to me, before this i've never used Vue and Jest but it wasn't hard to pick up (i've used Node before w react)
